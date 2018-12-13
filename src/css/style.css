@@ -1,0 +1,90 @@
+/*
+  Colors
+ */
+/*
+  Fonts
+ */
+/*
+  Spacing
+ */
+html {
+  font-size: 10px; }
+
+body, html {
+  display: grid;
+  height: 100%; }
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-size: 1.4rem;
+  font-family: "Raleway", sans-serif;
+  color: #BFC9FF;
+  background: #222; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Milonga", cursive; }
+
+h1 {
+  font-size: 6rem; }
+
+h2 {
+  font-size: 4.5rem; }
+
+h3 {
+  font-size: 3.25rem; }
+
+h4 {
+  font-size: 2.5rem; }
+
+h5 {
+  font-size: 2rem; }
+
+h6 {
+  font-size: 1.6rem; }
+
+a {
+  color: #CC99FF; }
+
+.centered {
+  margin: auto;
+  text-align: center; }
+
+.main-menu__header {
+  padding-bottom: 3rem;
+  user-select: none; }
+  .main-menu__header--main-title, .main-menu__header--subtitle {
+    margin: 0px; }
+  .main-menu__header--subtitle {
+    font-size: 3.25rem;
+    font-weight: 600; }
+
+.main-menu__options {
+  list-style: none;
+  margin: 0px;
+  padding: 0px; }
+  .main-menu__options--option {
+    margin: 1.5rem 0px;
+    font-size: 2rem; }
+    .main-menu__options--option a {
+      padding-left: 0px;
+      text-decoration: none;
+      border-bottom: none;
+      display: block;
+      width: 100%;
+      transition: padding-left 0.2s; }
+      .main-menu__options--option a:hover, .main-menu__options--option a:active, .main-menu__options--option a:focus {
+        padding-left: 0.5rem; }
+        .main-menu__options--option a:hover > span::before, .main-menu__options--option a:active > span::before, .main-menu__options--option a:focus > span::before {
+          color: #FFF;
+          left: -2.25rem; }
+      .main-menu__options--option a > span {
+        position: relative;
+        user-select: none; }
+        .main-menu__options--option a > span::before {
+          content: '>';
+          color: #222;
+          position: absolute;
+          left: -3rem;
+          top: 0px;
+          transition: left 0.2s, color 0.2s; }

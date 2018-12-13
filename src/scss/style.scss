@@ -1,0 +1,111 @@
+@import 'settings';
+
+html {
+  font-size: 10px;
+}
+body, html {
+  display: grid;
+  height: 100%;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+
+  font-size: $p-fsize;
+  font-family: $raleway;
+  color: $fcolor;
+
+  background: $charcoal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $milonga;
+}
+h1 {
+  font-size: $h1-fsize;
+}
+h2 {
+  font-size: $h2-fsize;
+}
+h3 {
+  font-size: $h3-fsize;
+}
+h4 {
+  font-size: $h4-fsize;
+}
+h5 {
+  font-size: $h5-fsize;
+}
+h6 {
+  font-size: $h6-fsize;
+}
+a {
+  color: $acolor;
+}
+
+.centered {
+  margin: auto;
+  text-align: center;
+}
+
+.main-menu {
+  &__header {
+    padding-bottom: $margin-2x;
+    user-select: none;
+
+    &--main-title,
+    &--subtitle {
+      margin: 0px;
+    }
+
+    &--subtitle {
+      font-size: $h3-fsize;
+      font-weight: $bold-weight;
+    }
+  }
+  &__options {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+
+    &--option {
+      margin: $margin 0px;
+      font-size: $h5-fsize;
+
+      a {
+
+        padding-left: 0px;
+        text-decoration: none;
+        border-bottom: none;
+        display: block;
+        width: 100%;
+
+        transition: padding-left 0.2s;
+
+        &:hover,
+        &:active,
+        &:focus {
+          padding-left: $margin/3;
+          & > span::before {
+            color: $white;
+            left: -1.5 * $margin;
+          }
+        }
+        & > span {
+          position: relative;
+          user-select: none;
+          &::before {
+            content: '>';
+            color: $charcoal;
+            position: absolute;
+
+            left: -2 * $margin;
+            top: 0px;
+
+            transition: left 0.2s, color 0.2s;
+          }
+        }
+      }
+    }
+  }
+}

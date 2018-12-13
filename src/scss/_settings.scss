@@ -1,0 +1,43 @@
+// _settings.scss
+
+/*
+  Colors
+ */
+$charcoal: #222;
+$ice: #BFC9FF;
+$orchid: #CC99FF;
+$black: #000;
+$gray: #ACADBC;
+$white: #FFF;
+
+/*
+  Fonts
+ */
+
+// Font stacks
+$milonga: 'Milonga', cursive;
+$raleway: 'Raleway', sans-serif;
+
+// Font weights
+$norm-weight: 400;
+$bold-weight: 600;
+
+// Font sizes
+$p-fsize: 1.4rem;
+
+$h1-fsize: 6rem;
+$h2-fsize: 4.5rem;
+$h3-fsize: 3.25rem;
+$h4-fsize: 2.5rem;
+$h5-fsize: 2rem;
+$h6-fsize: 1.6rem;
+
+// Font colors
+$fcolor: $ice;
+$acolor: $orchid;
+
+/*
+  Spacing
+ */
+$margin: 1.5rem;
+$margin-2x: 3rem;
