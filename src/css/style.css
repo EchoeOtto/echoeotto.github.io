@@ -7,6 +7,9 @@
 /*
   Spacing
  */
+/*
+  Timing
+ */
 html {
   font-size: 10px; }
 
@@ -24,7 +27,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Milonga", cursive;
-  color: #BFC9FF; }
+  color: #BBCCFF; }
 
 h1 {
   font-size: 6rem;
@@ -60,7 +63,8 @@ p {
 .content {
   padding: 1.5rem;
   width: 50rem;
-  max-width: 100vw; }
+  max-width: 100vw;
+  box-sizing: border-box; }
 
 .main-menu__header {
   margin-bottom: 3rem;
@@ -70,7 +74,7 @@ p {
   .main-menu__header--subtitle {
     font-size: 3.25rem;
     font-weight: 600;
-    color: #BFC9FF;
+    color: #BBCCFF;
     text-align: center; }
 
 .main-menu__options {
@@ -86,7 +90,7 @@ p {
       border-bottom: none;
       display: block;
       width: 100%;
-      transition: padding-left 0.2s; }
+      transition: padding-left 0.2s ease-out; }
       .main-menu__options--option a:hover, .main-menu__options--option a:active, .main-menu__options--option a:focus {
         padding-left: 0.5rem; }
         .main-menu__options--option a:hover > span::before, .main-menu__options--option a:active > span::before, .main-menu__options--option a:focus > span::before {
@@ -101,4 +105,45 @@ p {
           position: absolute;
           left: -3rem;
           top: 0px;
-          transition: left 0.2s, color 0.2s; }
+          transition: left 0.2s ease-out, color 0.2s ease-out; }
+
+.social-menu {
+  margin: 3rem 0px 1.5rem 0px;
+  padding: 0px; }
+  .social-menu--option {
+    list-style: none;
+    display: inline-block;
+    margin: 0px 0.75rem; }
+    .social-menu--option a {
+      position: relative;
+      display: block; }
+  .social-menu__tapas, .social-menu__wattpad, .social-menu__twitter, .social-menu__instagram, .social-menu__github {
+    color: #222;
+    width: 4rem;
+    height: 4rem; }
+    .social-menu__tapas::before, .social-menu__wattpad::before, .social-menu__twitter::before, .social-menu__instagram::before, .social-menu__github::before {
+      content: '';
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      width: 100%;
+      height: 100%;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: left top;
+      filter: grayscale(100%);
+      transition: filter 0.2s ease-in; }
+    .social-menu__tapas:hover::before, .social-menu__tapas:active::before, .social-menu__tapas:focus::before, .social-menu__wattpad:hover::before, .social-menu__wattpad:active::before, .social-menu__wattpad:focus::before, .social-menu__twitter:hover::before, .social-menu__twitter:active::before, .social-menu__twitter:focus::before, .social-menu__instagram:hover::before, .social-menu__instagram:active::before, .social-menu__instagram:focus::before, .social-menu__github:hover::before, .social-menu__github:active::before, .social-menu__github:focus::before {
+      filter: grayscale(0%); }
+  .social-menu__tapas::before {
+    background-image: url(../images/icon_tapas.png); }
+  .social-menu__wattpad::before {
+    background-image: url(../images/icon_wattpad.png); }
+  .social-menu__twitter::before {
+    background-image: url(../images/icon_twitter.png); }
+  .social-menu__instagram::before {
+    background-image: url(../images/icon_instagram.png);
+    filter: grayscale(100%) brightness(200%); }
+  .social-menu__github::before {
+    background-image: url(../images/icon_github.png);
+    filter: grayscale(100%) brightness(50%); }
