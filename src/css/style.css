@@ -17,16 +17,18 @@ body, html {
 body {
   margin: 0px;
   padding: 0px;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-family: "Raleway", sans-serif;
-  color: #BFC9FF;
+  color: #FFF;
   background: #222; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Milonga", cursive; }
+  font-family: "Milonga", cursive;
+  color: #BFC9FF; }
 
 h1 {
-  font-size: 6rem; }
+  font-size: 6rem;
+  margin: 1.5rem 0px; }
 
 h2 {
   font-size: 4.5rem; }
@@ -46,9 +48,19 @@ h6 {
 a {
   color: #CC99FF; }
 
+p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  text-align: left; }
+
 .centered {
   margin: auto;
   text-align: center; }
+
+.content {
+  padding: 1.5rem;
+  width: 50rem;
+  max-width: 100vw; }
 
 .main-menu__header {
   padding-bottom: 3rem;
@@ -57,11 +69,13 @@ a {
     margin: 0px; }
   .main-menu__header--subtitle {
     font-size: 3.25rem;
-    font-weight: 600; }
+    font-weight: 600;
+    color: #BFC9FF;
+    text-align: center; }
 
 .main-menu__options {
   list-style: none;
-  margin: 0px;
+  margin: 3rem 0px;
   padding: 0px; }
   .main-menu__options--option {
     margin: 1.5rem 0px;
