@@ -69,13 +69,13 @@ p {
 
 .centered {
   margin: auto;
-  text-align: center;
-  max-width: calc(100vw - 15px);
-  box-sizing: border-box; }
+  text-align: center; }
 
 .content {
   padding: 1.5rem;
-  width: 50rem; }
+  width: 75rem;
+  max-width: calc(100vw - 15px);
+  box-sizing: border-box; }
 
 .main-menu__header {
   margin-bottom: 3rem;
@@ -161,14 +161,15 @@ p {
 
 .stories-list {
   padding: 0 1.5rem;
-  margin: 1.5rem 0 3rem 0;
+  margin: 1.5rem auto 3rem auto;
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
+  justify-content: space-evenly;
+  width: 55rem;
   max-width: 100%; }
   .stories-list--story {
     position: relative;
-    margin: 0 0.15rem;
+    margin: 0.15rem;
     width: 25rem;
     list-style: none;
     vertical-align: top; }
@@ -254,7 +255,6 @@ p {
 .novels-list {
   padding: 1.5rem;
   padding-top: 0;
-  width: 60rem;
   max-width: 100%;
   box-sizing: border-box; }
   .novels-list--book {

@@ -69,14 +69,13 @@ p {
 .centered {
   margin: auto;
   text-align: center;
-  max-width: calc(100vw - 15px);
-
-  box-sizing: border-box;
 }
 
 .content {
   padding: $margin;
-  width: 50rem;
+  width: 75rem;
+  max-width: calc(100vw - 15px);
+  box-sizing: border-box;
 }
 
 .main-menu {
@@ -208,15 +207,16 @@ p {
 
 .stories-list {
   padding: 0 $margin;
-  margin: $margin 0 $margin-2x 0;
+  margin: $margin auto $margin-2x auto;
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
+  justify-content: space-evenly;
+  width: 55rem;
   max-width: 100%;
 
   &--story {
     position: relative;
-    margin: 0 0.15rem;
+    margin: 0.15rem;
 
     width: 25rem;
 
@@ -356,7 +356,6 @@ p {
 .novels-list {
   padding: $margin;
   padding-top: 0;
-  width: 60rem;
   max-width: 100%;
 
   box-sizing: border-box;
