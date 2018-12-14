@@ -32,6 +32,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: $h1-fsize;
   margin: $margin 0;
+  color: $blue;
 }
 h2 {
   font-size: $h2-fsize;
@@ -86,12 +87,12 @@ p {
     &--main-title,
     &--subtitle {
       margin: 0;
+      color: $blue;
     }
 
     &--subtitle {
       font-size: $h3-fsize;
       font-weight: $bold-weight;
-      color: $hcolor;
       text-align: center;
     }
   }
@@ -390,7 +391,7 @@ p {
   position: relative;
   font-family: $milonga;
   text-align: center;
-  color: $blue;
+  color: $ice;
 
   width: 100%;
 

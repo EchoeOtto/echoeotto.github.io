@@ -38,7 +38,8 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 6rem;
-  margin: 1.5rem 0; }
+  margin: 1.5rem 0;
+  color: #738AFF; }
 
 h2 {
   font-size: 4rem; }
@@ -81,11 +82,11 @@ p {
   margin-bottom: 3rem;
   user-select: none; }
   .main-menu__header--main-title, .main-menu__header--subtitle {
-    margin: 0; }
+    margin: 0;
+    color: #738AFF; }
   .main-menu__header--subtitle {
     font-size: 3rem;
     font-weight: bold;
-    color: #CCD5FF;
     text-align: center; }
 
 .main-menu__options {
@@ -277,7 +278,7 @@ p {
   position: relative;
   font-family: "Milonga", cursive;
   text-align: center;
-  color: #738AFF;
+  color: #CCD5FF;
   width: 100%;
   padding: 0.75rem;
   margin: 0;
