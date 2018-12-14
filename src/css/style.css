@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
   Colors
  */
@@ -18,38 +19,48 @@ body, html {
   height: 100%; }
 
 body {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   font-size: 1.6rem;
   font-family: "Raleway", sans-serif;
   color: #FFF;
+  max-width: calc(100vw - 15px);
+  overflow-x: hidden;
   background: #222; }
 
+h1, h2 {
+  font-family: "Milonga", cursive; }
+
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Milonga", cursive;
-  color: #BBCCFF; }
+  margin: 0 0 0.75rem 0;
+  font-weight: normal;
+  color: #CCD5FF; }
 
 h1 {
   font-size: 6rem;
-  margin: 1.5rem 0px; }
+  margin: 1.5rem 0; }
 
 h2 {
-  font-size: 4.5rem; }
+  font-size: 4rem; }
 
 h3 {
-  font-size: 3.25rem; }
+  font-size: 3rem; }
 
 h4 {
-  font-size: 2.5rem; }
+  font-size: 2rem; }
 
 h5 {
-  font-size: 2rem; }
+  font-size: 1.6rem; }
 
 h6 {
   font-size: 1.6rem; }
 
 a {
-  color: #CC99FF; }
+  color: #CC99FF;
+  text-decoration: none;
+  border: none; }
+  a:hover, a:focus, a:active {
+    text-decoration: underline; }
 
 p {
   line-height: 1.5;
@@ -58,34 +69,34 @@ p {
 
 .centered {
   margin: auto;
-  text-align: center; }
+  text-align: center;
+  max-width: calc(100vw - 15px);
+  box-sizing: border-box; }
 
 .content {
   padding: 1.5rem;
-  width: 50rem;
-  max-width: 100vw;
-  box-sizing: border-box; }
+  width: 50rem; }
 
 .main-menu__header {
   margin-bottom: 3rem;
   user-select: none; }
   .main-menu__header--main-title, .main-menu__header--subtitle {
-    margin: 0px; }
+    margin: 0; }
   .main-menu__header--subtitle {
-    font-size: 3.25rem;
-    font-weight: 600;
-    color: #BBCCFF;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #CCD5FF;
     text-align: center; }
 
 .main-menu__options {
   list-style: none;
-  margin: 3rem 0px;
-  padding: 0px; }
+  margin: 3rem 0;
+  padding: 0; }
   .main-menu__options--option {
-    margin: 1.5rem 0px;
+    margin: 1.5rem 0;
     font-size: 2rem; }
     .main-menu__options--option a {
-      padding-left: 0px;
+      padding-left: 0;
       text-decoration: none;
       border-bottom: none;
       display: block;
@@ -104,16 +115,16 @@ p {
           color: #222;
           position: absolute;
           left: -3rem;
-          top: 0px;
+          top: 0;
           transition: left 0.2s ease-out, color 0.2s ease-out; }
 
 .social-menu {
-  margin: 3rem 0px 1.5rem 0px;
-  padding: 0px; }
+  margin: 3rem 0 1.5rem 0;
+  padding: 0; }
   .social-menu--option {
     list-style: none;
     display: inline-block;
-    margin: 0px 0.75rem; }
+    margin: 0 0.75rem; }
     .social-menu--option a {
       position: relative;
       display: block; }
@@ -124,8 +135,8 @@ p {
     .social-menu__tapas::before, .social-menu__wattpad::before, .social-menu__twitter::before, .social-menu__instagram::before, .social-menu__github::before {
       content: '';
       position: absolute;
-      left: 0px;
-      top: 0px;
+      left: 0;
+      top: 0;
       width: 100%;
       height: 100%;
       background-size: contain;
@@ -147,3 +158,145 @@ p {
   .social-menu__github::before {
     background-image: url(../images/icon_github.png);
     filter: grayscale(100%) brightness(50%); }
+
+.stories-list {
+  padding: 0 1.5rem;
+  margin: 1.5rem 0 3rem 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  max-width: 100%; }
+  .stories-list--story {
+    position: relative;
+    margin: 0 0.15rem;
+    width: 25rem;
+    list-style: none;
+    vertical-align: top; }
+    .stories-list--story__image {
+      position: relative;
+      display: block;
+      padding: 1px; }
+      .stories-list--story__image > img {
+        display: block;
+        width: 100%;
+        height: auto; }
+    .stories-list--story__info {
+      position: relative;
+      display: block; }
+      .stories-list--story__info::before, .stories-list--story__info::after {
+        content: '';
+        position: absolute;
+        top: -1.05rem;
+        width: 0;
+        height: 0;
+        border-style: solid; }
+      .stories-list--story__info::before {
+        left: 0.1rem;
+        border-width: 0.9rem 0 0.9rem 0.9rem;
+        border-color: transparent transparent transparent #ACADBC; }
+      .stories-list--story__info::after {
+        right: 0.1rem;
+        border-width: 0.9rem 0.9rem 0.9rem 0;
+        border-color: transparent #ACADBC transparent transparent; }
+    .stories-list--story__blurb {
+      margin: 0;
+      padding: 0 1.5rem 1.5rem 1.5rem; }
+      .stories-list--story__blurb > *:first-child {
+        margin-top: 0; }
+      .stories-list--story__blurb > *:last-child {
+        position: relative;
+        display: block;
+        margin-bottom: 0;
+        width: 100%; }
+        .stories-list--story__blurb > *:last-child::before, .stories-list--story__blurb > *:last-child::after {
+          content: '';
+          position: absolute;
+          bottom: -1.4rem;
+          width: 0;
+          height: 0;
+          border-style: solid; }
+        .stories-list--story__blurb > *:last-child::before {
+          left: -1.4rem;
+          border-width: 0.75rem 0 0 0.75rem;
+          border-color: transparent transparent transparent #ACADBC; }
+        .stories-list--story__blurb > *:last-child::after {
+          right: -1.4rem;
+          border-width: 0 0 0.75rem 0.75rem;
+          border-color: transparent transparent #ACADBC transparent; }
+    .stories-list--story::after {
+      content: '';
+      position: absolute;
+      left: 0px;
+      top: 25rem;
+      width: 100%;
+      height: 0;
+      border-bottom: 0.3rem solid #222; }
+    .stories-list--story__image::before, .stories-list--story__image::after, .stories-list--story__tags::before, .stories-list--story__tags::after, .stories-list--story__blurb::before, .stories-list--story__blurb::after {
+      content: '';
+      position: absolute;
+      width: 3rem;
+      height: 1.5rem;
+      border-width: 1px;
+      border-color: #ACADBC; }
+    .stories-list--story__image::before, .stories-list--story__tags::before, .stories-list--story__blurb::before {
+      left: 0;
+      border-left-style: solid; }
+    .stories-list--story__image::after, .stories-list--story__tags::after, .stories-list--story__blurb::after {
+      right: 0;
+      border-right-style: solid; }
+    .stories-list--story__image::before, .stories-list--story__image::after, .stories-list--story__blurb::before, .stories-list--story__blurb::after {
+      bottom: 0;
+      border-bottom-style: solid; }
+    .stories-list--story__tags::before, .stories-list--story__tags::after {
+      top: 0;
+      border-top-style: solid; }
+
+.novels-list {
+  padding: 1.5rem;
+  padding-top: 0;
+  width: 60rem;
+  max-width: 100%;
+  box-sizing: border-box; }
+  .novels-list--book {
+    list-style: none;
+    width: 100%; }
+    .novels-list--book__title {
+      color: #738AFF;
+      margin-bottom: 0; }
+    .novels-list--book__blurb {
+      margin: 0; }
+      .novels-list--book__blurb > *:first-child {
+        margin-top: 0; }
+      .novels-list--book__blurb strong {
+        display: inline-block; }
+        .novels-list--book__blurb strong::first-letter {
+          font-family: "Milonga", cursive; }
+
+.novels-list--book__tags,
+.stories-list--story__tags {
+  position: relative;
+  font-family: "Milonga", cursive;
+  text-align: center;
+  color: #738AFF;
+  width: 100%;
+  padding: 0.75rem;
+  margin: 0;
+  margin-top: 0.3rem;
+  box-sizing: border-box; }
+  .novels-list--book__tags--tag,
+  .stories-list--story__tags--tag {
+    list-style: none;
+    display: inline-block; }
+    .novels-list--book__tags--tag::before, .novels-list--book__tags--tag::after,
+    .stories-list--story__tags--tag::before,
+    .stories-list--story__tags--tag::after {
+      color: #ACADBC; }
+    .novels-list--book__tags--tag:first-child::before,
+    .stories-list--story__tags--tag:first-child::before {
+      content: '⥽ '; }
+    .novels-list--book__tags--tag::after,
+    .stories-list--story__tags--tag::after {
+      content: ' · '; }
+    .novels-list--book__tags--tag:last-child::after,
+    .stories-list--story__tags--tag:last-child::after {
+      content: ' ⥼'; }

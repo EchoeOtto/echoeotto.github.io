@@ -4,7 +4,8 @@
   Colors
  */
 $charcoal: #222;
-$ice: #BBCCFF;
+$ice: #CCD5FF;
+$blue: #738AFF;
 $orchid: #CC99FF;
 $black: #000;
 $gray: #ACADBC;
@@ -19,17 +20,17 @@ $milonga: 'Milonga', cursive;
 $raleway: 'Raleway', sans-serif;
 
 // Font weights
-$norm-weight: 400;
-$bold-weight: 600;
+$norm-weight: normal;
+$bold-weight: bold;
 
 // Font sizes
 $p-fsize: 1.6rem;
 
 $h1-fsize: 6rem;
-$h2-fsize: 4.5rem;
-$h3-fsize: 3.25rem;
-$h4-fsize: 2.5rem;
-$h5-fsize: 2rem;
+$h2-fsize: 4rem;
+$h3-fsize: 3rem;
+$h4-fsize: 2rem;
+$h5-fsize: 1.6rem;
 $h6-fsize: 1.6rem;
 
 // Font colors
@@ -40,7 +41,9 @@ $acolor: $orchid;
 /*
   Spacing
  */
+$margin-half: 0.75rem;
 $margin: 1.5rem;
+$margin-neg: -1.5rem;
 $margin-2x: 3rem;
 
 
