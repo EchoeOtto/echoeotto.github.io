@@ -77,6 +77,7 @@ p {
   width: 75rem;
   max-width: calc(100vw - 15px);
   box-sizing: border-box;
+  animation: $animate-in;
 }
 
 .main-menu {
@@ -425,5 +426,16 @@ p {
     &:last-child::after {
       content: ' ⥼';
     }
+  }
+}
+
+/* Animations */
+@keyframes open {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
   }
 }

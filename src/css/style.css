@@ -9,7 +9,7 @@
   Spacing
  */
 /*
-  Timing
+  Animation
  */
 html {
   font-size: 10px; }
@@ -76,7 +76,8 @@ p {
   padding: 1.5rem;
   width: 75rem;
   max-width: calc(100vw - 15px);
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  animation: open 0.3s normal forwards ease-in; }
 
 .main-menu__header {
   margin-bottom: 3rem;
@@ -305,3 +306,10 @@ p {
     .novels-list--book__tags--tag:last-child::after,
     .stories-list--story__tags--tag:last-child::after {
       content: ' ⥼'; }
+
+/* Animations */
+@keyframes open {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
