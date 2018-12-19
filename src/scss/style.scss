@@ -208,16 +208,18 @@ p {
 
 .stories-list {
   padding: 0 $margin;
-  margin: $margin auto $margin-2x auto;
+  margin: 0 auto $margin-2x auto;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
   width: 55rem;
   max-width: 100%;
+  box-sizing: border-box;
 
   &--story {
     position: relative;
     margin: 0.15rem;
+    margin-top: $margin;
 
     width: 25rem;
 
@@ -244,7 +246,7 @@ p {
       &::after {
         content: '';
         position: absolute;
-        top: -1.05rem;
+        top: -1.0rem;
 
         width: 0;
         height: 0;
@@ -355,8 +357,7 @@ p {
 }
 
 .novels-list {
-  padding: $margin;
-  padding-top: 0;
+  padding: 0 $margin;
   max-width: 100%;
 
   box-sizing: border-box;
@@ -364,6 +365,11 @@ p {
   &--book {
     list-style: none;
     width: 100%;
+    margin: $margin-2x 0;
+
+    &:first-child {
+      margin-top: $margin;
+    }
 
     &__title {
       color: $blue;

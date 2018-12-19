@@ -162,15 +162,17 @@ p {
 
 .stories-list {
   padding: 0 1.5rem;
-  margin: 1.5rem auto 3rem auto;
+  margin: 0 auto 3rem auto;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
   width: 55rem;
-  max-width: 100%; }
+  max-width: 100%;
+  box-sizing: border-box; }
   .stories-list--story {
     position: relative;
     margin: 0.15rem;
+    margin-top: 1.5rem;
     width: 25rem;
     list-style: none;
     vertical-align: top; }
@@ -188,7 +190,7 @@ p {
       .stories-list--story__info::before, .stories-list--story__info::after {
         content: '';
         position: absolute;
-        top: -1.05rem;
+        top: -1.0rem;
         width: 0;
         height: 0;
         border-style: solid; }
@@ -254,13 +256,15 @@ p {
       border-top-style: solid; }
 
 .novels-list {
-  padding: 1.5rem;
-  padding-top: 0;
+  padding: 0 1.5rem;
   max-width: 100%;
   box-sizing: border-box; }
   .novels-list--book {
     list-style: none;
-    width: 100%; }
+    width: 100%;
+    margin: 3rem 0; }
+    .novels-list--book:first-child {
+      margin-top: 1.5rem; }
     .novels-list--book__title {
       color: #738AFF;
       margin-bottom: 0; }
