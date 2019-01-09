@@ -243,15 +243,40 @@ p {
     list-style: none;
     vertical-align: top;
 
-    &__image {
-      position: relative;
-      display: block;
-      padding: 0.1rem;
+    &__top {
+      display: grid;
+      grid-template-rows: auto;
+      grid-template-columns: 45% auto;
+      width: 100%;
 
-      & > img {
-        display: block;
-        width: 100%;
-        height: auto;
+      &--image {
+        position: relative;
+        display: grid;
+        padding: 0.1rem;
+
+        & > img {
+          width: 100%;
+          max-width: $story-width / 2;
+          height: auto;
+        }
+      }
+      &--meta {
+        position: relative;
+
+        &__title {
+          font-size: ( $h3-fsize + $h4-fsize ) / 2;
+          font-family: $milonga;
+          color: $white;
+          margin: $margin-half;
+        }
+
+        &__awards {
+          text-align: center;
+          list-style: none;
+          padding: 0;
+          margin: 0 $margin-half $margin-half $margin-half;
+          color: $blue;
+        }
       }
     }
 
@@ -263,7 +288,7 @@ p {
       &::after {
         content: '';
         position: absolute;
-        top: -1.0rem;
+        top: -0.95rem;
 
         width: 0;
         height: 0;
@@ -271,20 +296,20 @@ p {
         border-style: solid;
       }
       &::before {
-        left: 0.1rem;
+        left: 0;
         border-width: 0.9rem 0 0.9rem 0.9rem;
         border-color: transparent transparent transparent $gray;
       }
       &::after {
-        right: 0.1rem;
+        right: 0;
         border-width: 0.9rem 0.9rem 0.9rem 0;
         border-color: transparent $gray transparent transparent;
       }
     }
 
     &__blurb {
-      margin: 0;
-      padding: 0 $margin $margin $margin;
+      padding: $margin;
+      margin: 0.2rem 0 0 0;
 
       & > *:first-child {
         margin-top: 0;
@@ -297,35 +322,12 @@ p {
       }
     }
 
-    &__awards {
-      text-align: center;
-      list-style: none;
-      padding: 0;
-      margin: $margin-neg-half $margin $margin $margin;
-      color: $blue;
-    }
-
     &__button {
       text-align: center;
     }
 
-    &__brackets--top {
-      position: absolute;
-      width: 100%;
-    }
-
-    &::after {
-      content: '';
-      position: absolute;
-      top: $story-width;
-      left: 0px;
-
-      height: 0;
-      width: 100%;
-      border-bottom: 0.3rem solid $charcoal;
-    }
-    &__brackets--top__triangles::before,
-    &__brackets--top__triangles::after,
+    &__top--image::before,
+    &__top--meta::before,
     &__blurb > *:last-child::before,
     &__blurb > *:last-child::after {
       content: '';
@@ -337,7 +339,7 @@ p {
 
       border-style: solid;
     }
-    &__brackets--top__triangles::before {
+    &__top--image::before {
       left: 0.1rem;
       top: 0.1rem;
       border-width: $margin-half $margin-half 0 0;
@@ -349,7 +351,7 @@ p {
       border-width: $margin-half 0 0 $margin-half;
       border-color: transparent transparent transparent $gray;
     }
-    &__brackets--top__triangles::after {
+    &__top--meta::before {
       right: 0.1rem;
       top: 0.1rem;
       border-width: 0 $margin-half $margin-half 0;
@@ -362,12 +364,12 @@ p {
       border-color: transparent transparent $gray transparent;
     }
 
-    &__brackets--top::before,
-    &__brackets--top::after,
-    &__image::before,
-    &__image::after,
-    &__tags::before,
-    &__tags::after,
+    &__top::before,
+    &__top::after,
+    &__top--image::after,
+    &__top--meta::after,
+    &__info--brackets::before,
+    &__info--brackets::after,
     &__blurb::before,
     &__blurb::after {
       content: '';
@@ -379,31 +381,31 @@ p {
       border-width: 0.1rem;
       border-color: $gray;
     }
-    &__brackets--top::before,
-    &__image::before,
-    &__tags::before,
+    &__top::before,
+    &__top--image::after,
+    &__info--brackets::before,
     &__blurb::before {
       left: 0;
       border-left-style: solid;
     }
-    &__brackets--top::after,
-    &__image::after,
-    &__tags::after,
+    &__top::after,
+    &__top--meta::after,
+    &__info--brackets::after,
     &__blurb::after {
       right: 0;
       border-right-style: solid;
     }
-    &__image::before,
-    &__image::after,
+    &__top--image::after,
+    &__top--meta::after,
     &__blurb::before,
     &__blurb::after {
       bottom: 0;
       border-bottom-style: solid;
     }
-    &__brackets--top::before,
-    &__brackets--top::after,
-    &__tags::before,
-    &__tags::after {
+    &__top::before,
+    &__top::after,
+    &__info--brackets::before,
+    &__info--brackets::after {
       top: 0;
       border-top-style: solid;
     }
@@ -450,7 +452,7 @@ p {
 }
 
 .novels-list--book__tags,
-.stories-list--story__tags {
+.stories-list--story__top--meta__tags {
   position: relative;
   font-family: $milonga;
   text-align: center;
