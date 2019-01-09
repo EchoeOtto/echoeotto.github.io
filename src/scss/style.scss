@@ -214,6 +214,7 @@ p {
   flex-flow: row wrap;
   justify-content: space-evenly;
   width: $stories-width;
+  max-width: 100%;
   box-sizing: border-box;
 
   &--story {
@@ -222,6 +223,7 @@ p {
     margin-top: $margin;
 
     width: $story-width;
+    max-width: 100%;
 
     list-style: none;
     vertical-align: top;

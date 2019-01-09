@@ -171,12 +171,14 @@ p {
   flex-flow: row wrap;
   justify-content: space-evenly;
   width: 64.5rem;
+  max-width: 100%;
   box-sizing: border-box; }
   .stories-list--story {
     position: relative;
     margin: 0.15rem;
     margin-top: 1.5rem;
     width: 30rem;
+    max-width: 100%;
     list-style: none;
     vertical-align: top; }
     .stories-list--story__image {
