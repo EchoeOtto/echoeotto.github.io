@@ -41,11 +41,17 @@ $acolor: $orchid;
 /*
   Spacing
  */
-$margin-half: 0.75rem;
 $margin: 1.5rem;
-$margin-neg: -1.5rem;
-$margin-2x: 3rem;
+$margin-neg: $margin * -1;
+$margin-neg-half: $margin / 2 * -1;
+$margin-half: $margin / 2;
+$margin-2x: $margin * 2;
 
+/*
+  Sizing
+ */
+$story-width: 30rem;
+$stories-width: $story-width * 2 + $margin * 3;
 
 /*
   Animation
