@@ -22,7 +22,7 @@ body {
 }
 
 h1, h2 {
-  font-family: $milonga;
+  font-family: $vindica;
   text-align: center;
 }
 h1, h2, h3, h4, h5, h6 {
@@ -264,8 +264,7 @@ p {
         position: relative;
 
         &__title {
-          font-size: ( $h3-fsize + $h4-fsize ) / 2;
-          font-family: $milonga;
+          font-size: $h4-fsize;
           color: $white;
           margin: $margin-half;
         }
@@ -444,7 +443,7 @@ p {
       strong {
         display: inline-block;
         &::first-letter {
-          font-family: $milonga;
+          font-family: $vindica;
         }
       }
     }
@@ -454,7 +453,8 @@ p {
 .novels-list--book__tags,
 .stories-list--story__top--meta__tags {
   position: relative;
-  font-family: $milonga;
+  font-family: $vindica;
+  font-size: $h5-fsize;
   text-align: center;
   color: $ice;
 
