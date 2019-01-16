@@ -42,7 +42,7 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center; }
 
 h1 {
-  font-size: 7.5rem;
+  font-size: 7rem;
   margin: 2rem 0;
   color: #738AFF; }
 
@@ -57,7 +57,7 @@ h4 {
   font-size: 2.25rem; }
 
 h5 {
-  font-size: 1.8rem; }
+  font-size: 1.75rem; }
 
 h6 {
   font-size: 1.6rem; }
@@ -319,13 +319,14 @@ p {
       .novels-list--book__blurb strong {
         display: inline-block; }
         .novels-list--book__blurb strong::first-letter {
-          font-family: "Wild Zova Free", cursive; }
+          font-weight: bolder;
+          font-size: 1.75rem; }
 
 .novels-list--book__tags,
 .stories-list--story__top--meta__tags {
   position: relative;
   font-family: "Wild Zova Free", cursive;
-  font-size: 1.8rem;
+  font-size: 1.75rem;
   text-align: center;
   color: #CCD5FF;
   width: 100%;
