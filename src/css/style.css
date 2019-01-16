@@ -32,7 +32,7 @@ body {
   background: #222; }
 
 h1, h2 {
-  font-family: "Vindica", cursive;
+  font-family: "Wild Zova Free", cursive;
   text-align: center; }
 
 h1, h2, h3, h4, h5, h6 {
@@ -319,12 +319,12 @@ p {
       .novels-list--book__blurb strong {
         display: inline-block; }
         .novels-list--book__blurb strong::first-letter {
-          font-family: "Vindica", cursive; }
+          font-family: "Wild Zova Free", cursive; }
 
 .novels-list--book__tags,
 .stories-list--story__top--meta__tags {
   position: relative;
-  font-family: "Vindica", cursive;
+  font-family: "Wild Zova Free", cursive;
   font-size: 1.8rem;
   text-align: center;
   color: #CCD5FF;

@@ -22,7 +22,7 @@ body {
 }
 
 h1, h2 {
-  font-family: $vindica;
+  font-family: $wild-zova;
   text-align: center;
 }
 h1, h2, h3, h4, h5, h6 {
@@ -443,7 +443,7 @@ p {
       strong {
         display: inline-block;
         &::first-letter {
-          font-family: $vindica;
+          font-family: $wild-zova;
         }
       }
     }
@@ -453,7 +453,7 @@ p {
 .novels-list--book__tags,
 .stories-list--story__top--meta__tags {
   position: relative;
-  font-family: $vindica;
+  font-family: $wild-zova;
   font-size: $h5-fsize;
   text-align: center;
   color: $ice;
