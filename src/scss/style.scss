@@ -118,7 +118,7 @@ p {
 
     &--option {
       margin: $margin 0;
-      font-size: $h4-fsize;
+      font-size: ( $h5-fsize + $h4-fsize )/2;
 
       a {
         padding-left: 0;
