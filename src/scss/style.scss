@@ -20,27 +20,26 @@ body {
 
   background: $charcoal;
 }
-
-h1, h2 {
-  font-family: $amatic-sc;
-  text-align: center;
-}
 h1, h2, h3, h4, h5, h6 {
   margin: $margin-2x 0 $margin-half 0;
-  font-weight: normal;
   color: $hcolor;
   text-align: center;
+  font-weight: normal;
 }
 h1 {
   font-size: $h1-fsize;
+  font-family: $amatic-sc;
   margin: $margin 0;
   color: $blue;
 }
 h2 {
   font-size: $h2-fsize;
   margin-top: $margin-3x;
+  font-weight: $bold-weight;
 }
 h3 {
+  font-family: $amatic-sc;
+  font-weight: $bold-weight;
   font-size: $h3-fsize;
 }
 h4 {
@@ -323,6 +322,7 @@ p {
 
     &__button {
       text-align: center;
+      font-size: $h5-fsize;
     }
 
     &__top--image::before,

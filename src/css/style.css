@@ -31,33 +31,33 @@ body {
   overflow-x: hidden;
   background: #222; }
 
-h1, h2 {
-  font-family: "Amatic SC", cursive;
-  text-align: center; }
-
 h1, h2, h3, h4, h5, h6 {
   margin: 4rem 0 1rem 0;
-  font-weight: normal;
   color: #CCD5FF;
-  text-align: center; }
+  text-align: center;
+  font-weight: normal; }
 
 h1 {
-  font-size: 7rem;
+  font-size: 6rem;
+  font-family: "Amatic SC", cursive;
   margin: 2rem 0;
   color: #738AFF; }
 
 h2 {
-  font-size: 5rem;
-  margin-top: 6rem; }
+  font-size: 4rem;
+  margin-top: 6rem;
+  font-weight: bold; }
 
 h3 {
-  font-size: 3rem; }
+  font-family: "Amatic SC", cursive;
+  font-weight: bold;
+  font-size: 4rem; }
 
 h4 {
-  font-size: 2.25rem; }
+  font-size: 3rem; }
 
 h5 {
-  font-size: 1.75rem; }
+  font-size: 2rem; }
 
 h6 {
   font-size: 1.6rem; }
@@ -100,7 +100,7 @@ p {
     margin: 0;
     color: #738AFF; }
   .main-menu__header--subtitle {
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: bold;
     text-align: center; }
 
@@ -111,7 +111,7 @@ p {
   text-align: center; }
   .main-menu__options--option {
     margin: 2rem 0;
-    font-size: 2.25rem; }
+    font-size: 3rem; }
     .main-menu__options--option a {
       padding-left: 0;
       text-decoration: none;
@@ -209,7 +209,7 @@ p {
       .stories-list--story__top--meta {
         position: relative; }
         .stories-list--story__top--meta__title {
-          font-size: 2.25rem;
+          font-size: 3rem;
           color: #FFF;
           margin: 1rem; }
         .stories-list--story__top--meta__awards {
@@ -247,7 +247,8 @@ p {
         margin-bottom: 0;
         width: 100%; }
     .stories-list--story__button {
-      text-align: center; }
+      text-align: center;
+      font-size: 2rem; }
     .stories-list--story__top--image::before, .stories-list--story__top--meta::before,
     .stories-list--story__blurb > *:last-child::before,
     .stories-list--story__blurb > *:last-child::after {
@@ -320,13 +321,13 @@ p {
         display: inline-block; }
         .novels-list--book__blurb strong::first-letter {
           font-weight: bolder;
-          font-size: 1.75rem; }
+          font-size: 2rem; }
 
 .novels-list--book__tags,
 .stories-list--story__top--meta__tags {
   position: relative;
   font-family: "Amatic SC", cursive;
-  font-size: 1.75rem;
+  font-size: 2rem;
   text-align: center;
   color: #CCD5FF;
   width: 100%;
