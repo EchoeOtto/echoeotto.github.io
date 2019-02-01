@@ -236,6 +236,9 @@ p {
   box-sizing: border-box;
 
   &--story {
+    display: flex;
+    flex-flow: column nowrap;
+
     position: relative;
     margin: 0.15rem;
     margin-top: $margin;
@@ -247,6 +250,7 @@ p {
     vertical-align: top;
 
     &__top {
+      flex: 0;
       display: grid;
       grid-template-rows: auto;
       grid-template-columns: 45% auto;
@@ -286,6 +290,7 @@ p {
     &__info {
       position: relative;
       display: block;
+      flex: 1;
 
       &::before,
       &::after {
@@ -312,22 +317,22 @@ p {
 
     &__blurb {
       padding: $margin;
+      padding-bottom: $margin-2x;
       margin: 0.2rem 0 0 0;
 
       & > *:first-child {
         margin-top: 0;
       }
-      & > *:last-child {
-        position: relative;
-        display: block;
-        margin-bottom: 0;
-        width: 100%;
-      }
     }
 
     &__button {
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: $margin;
       text-align: center;
       font-size: $h5-fsize;
+      width: 100%;
     }
 
     &__top--image::before,
@@ -350,8 +355,8 @@ p {
       border-color: $gray transparent transparent transparent;
     }
     &__blurb > *:last-child::before {
-      left: $margin-neg + 0.1rem;
-      bottom: $margin-neg + 0.1rem;
+      left: 0.1rem;
+      bottom: 0.1rem;
       border-width: $margin-half 0 0 $margin-half;
       border-color: transparent transparent transparent $gray;
     }
@@ -362,8 +367,8 @@ p {
       border-color: transparent $gray transparent transparent;
     }
     &__blurb > *:last-child::after {
-      right: $margin-neg + 0.1rem;
-      bottom: $margin-neg + 0.1rem;
+      right: 0.1rem;
+      bottom: 0.1rem;
       border-width: 0 0 $margin-half $margin-half;
       border-color: transparent transparent $gray transparent;
     }

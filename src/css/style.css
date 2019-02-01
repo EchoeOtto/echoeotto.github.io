@@ -189,6 +189,8 @@ p {
   max-width: 100%;
   box-sizing: border-box; }
   .stories-list--story {
+    display: flex;
+    flex-flow: column nowrap;
     position: relative;
     margin: 0.15rem;
     margin-top: 2rem;
@@ -197,6 +199,7 @@ p {
     list-style: none;
     vertical-align: top; }
     .stories-list--story__top {
+      flex: 0;
       display: grid;
       grid-template-rows: auto;
       grid-template-columns: 45% auto;
@@ -224,7 +227,8 @@ p {
           font-size: 1.75rem; }
     .stories-list--story__info {
       position: relative;
-      display: block; }
+      display: block;
+      flex: 1; }
       .stories-list--story__info::before, .stories-list--story__info::after {
         content: '';
         position: absolute;
@@ -242,17 +246,18 @@ p {
         border-color: transparent #ACADBC transparent transparent; }
     .stories-list--story__blurb {
       padding: 2rem;
+      padding-bottom: 4rem;
       margin: 0.2rem 0 0 0; }
       .stories-list--story__blurb > *:first-child {
         margin-top: 0; }
-      .stories-list--story__blurb > *:last-child {
-        position: relative;
-        display: block;
-        margin-bottom: 0;
-        width: 100%; }
     .stories-list--story__button {
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: 2rem;
       text-align: center;
-      font-size: 2rem; }
+      font-size: 2rem;
+      width: 100%; }
     .stories-list--story__top--image::before, .stories-list--story__top--meta::before,
     .stories-list--story__blurb > *:last-child::before,
     .stories-list--story__blurb > *:last-child::after {
@@ -268,8 +273,8 @@ p {
       border-width: 1rem 1rem 0 0;
       border-color: #ACADBC transparent transparent transparent; }
     .stories-list--story__blurb > *:last-child::before {
-      left: -1.9rem;
-      bottom: -1.9rem;
+      left: 0.1rem;
+      bottom: 0.1rem;
       border-width: 1rem 0 0 1rem;
       border-color: transparent transparent transparent #ACADBC; }
     .stories-list--story__top--meta::before {
@@ -278,8 +283,8 @@ p {
       border-width: 0 1rem 1rem 0;
       border-color: transparent #ACADBC transparent transparent; }
     .stories-list--story__blurb > *:last-child::after {
-      right: -1.9rem;
-      bottom: -1.9rem;
+      right: 0.1rem;
+      bottom: 0.1rem;
       border-width: 0 0 1rem 1rem;
       border-color: transparent transparent #ACADBC transparent; }
     .stories-list--story__top::before, .stories-list--story__top::after, .stories-list--story__top--image::after, .stories-list--story__top--meta::after, .stories-list--story__info--brackets::before, .stories-list--story__info--brackets::after, .stories-list--story__blurb::before, .stories-list--story__blurb::after {
