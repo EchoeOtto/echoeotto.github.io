@@ -41,7 +41,10 @@ h1 {
   font-size: 6rem;
   font-family: "Amatic SC", cursive;
   margin: 2rem 0;
-  color: #738AFF; }
+  color: #738AFF;
+  background: -webkit-linear-gradient(#CCD5FF, #3F5FFF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
 
 h2 {
   font-size: 4rem;
