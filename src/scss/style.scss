@@ -19,6 +19,7 @@ body {
   overflow-x: hidden;
 
   background: $charcoal;
+  background: linear-gradient(to right, $black, $charcoal, $charcoal, $black);
 }
 h1, h2, h3, h4, h5, h6 {
   margin: $margin-2x 0 $margin-half 0;

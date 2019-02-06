@@ -29,7 +29,8 @@ body {
   color: #FFF;
   max-width: calc(100vw - 15px);
   overflow-x: hidden;
-  background: #222; }
+  background: #222;
+  background: linear-gradient(to right, #111111, #222, #222, #111111); }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 4rem 0 1rem 0;
