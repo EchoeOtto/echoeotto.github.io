@@ -81,6 +81,10 @@ p {
   text-align: left;
   max-width: 60rem; }
 
+.keyword {
+  color: #E5EAFF;
+  font-weight: bold; }
+
 .content {
   padding: 0 2rem;
   margin: 6rem auto;
@@ -331,9 +335,9 @@ p {
       margin: 0; }
       .novels-list--book__blurb > *:first-child {
         margin-top: 0; }
-      .novels-list--book__blurb strong {
+      .novels-list--book__blurb span {
         display: inline-block; }
-        .novels-list--book__blurb strong::first-letter {
+        .novels-list--book__blurb span::first-letter {
           font-weight: bolder;
           font-size: 2rem; }
 

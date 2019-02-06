@@ -76,6 +76,10 @@ p {
   text-align: left;
   max-width: 60rem;
 }
+.keyword {
+  color: $snow;
+  font-weight: $bold-weight;
+}
 
 .content {
   padding: 0 $margin;
@@ -455,7 +459,7 @@ p {
         margin-top: 0;
       }
 
-      strong {
+      span {
         display: inline-block;
         &::first-letter {
           font-weight: bolder;
